@@ -1,166 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cool-O-Meter</title>
-  <style>
-    /* Mobile-first default styles */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 1rem;
-      background-color: #f9f9f9;
-    }
-
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-    }
-
-    p.caption {
-      text-align: center;
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 2rem;
-    }
-
-    .leaderboard, .rankings {
-      margin-bottom: 2rem;
-    }
-
-    .leaderboard h2, .rankings h2 {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-      color: #333;
-    }
-
-    .top-subjects {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      align-items: center;
-    }
-
-    .subject {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 1rem;
-      text-align: center;
-      width: 100%;
-      max-width: 300px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .subject img {
-      width: 40px;
-      height: 40px;
-    }
-
-    .rank-1 {
-      font-size: 1.3rem;
-      font-weight: bold;
-      background-color: #ffeaa7;
-    }
-
-    .rank-2 {
-      font-size: 1.1rem;
-      background-color: #dfe6e9;
-    }
-
-    .rank-3 {
-      font-size: 1rem;
-      background-color: #fab1a0;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    th, td {
-      padding: 0.8rem;
-      text-align: left;
-      font-size: 0.9rem;
-      border-bottom: 1px solid #ddd;
-    }
-
-    th {
-      background-color: #74b9ff;
-      color: white;
-    }
-
-    td img {
-      width: 20px;
-      height: 20px;
-      vertical-align: middle;
-      margin-right: 0.5rem;
-    }
-
-    .very-cool {
-      color: #d63031;
-      font-weight: bold;
-      font-size: 0.8rem;
-    }
-
-    button {
-      background-color: #0984e3;
-      color: white;
-      padding: 0.4rem 0.8rem;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    .bar {
-      height: 20px;
-      background-color: #55efc4;
-      border-radius: 5px;
-      color: black;
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-
-    /* Tablet and larger screens */
-    @media (min-width: 768px) {
-      .top-subjects {
-        flex-direction: row;
-        justify-content: center;
-      }
-
-      .rankings table {
-        font-size: 1rem;
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
 
-  <h1>Cool-O-Meter</h1>
-  <p class="caption">Which subject rules them all? You decide! 🔥</p>
+<header class="site-header">
+  <div class="header-content">
+    <div class="header-left">
+       <a href="https://www.linkedin.com/company/meeedly/posts/?feedView=all" target="_blank">
+        <img src="/images/meeedly.png" alt="Meeedly Logo" class="logo" />
+       </a>
+      <a href="https://www.linkedin.com/showcase/global-summer-challenge/posts/?feedView=all" target="_blank">
+        <img src="/images/gsc-logo.png" alt="GSC Logo" class="logo" />
+      </a>
+      
+    </div>
+      <!-- share button -->
+     <div class="header-right">
+      <button class="share-button" onclick="copyLink()">
+          <svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon"> 
+            <path fill="#fff" d="M767.99994 585.142857q75.995429 0 129.462857 53.394286t53.394286 129.462857-53.394286 129.462857-129.462857 53.394286-129.462857-53.394286-53.394286-129.462857q0-6.875429 1.170286-19.456l-205.677714-102.838857q-52.589714 49.152-124.562286 49.152-75.995429 0-129.462857-53.394286t-53.394286-129.462857 53.394286-129.462857 129.462857-53.394286q71.972571 0 124.562286 49.152l205.677714-102.838857q-1.170286-12.580571-1.170286-19.456 0-75.995429 53.394286-129.462857t129.462857-53.394286 129.462857 53.394286 53.394286 129.462857-53.394286 129.462857-129.462857 53.394286q-71.972571 0-124.562286-49.152l-205.677714 102.838857q1.170286 12.580571 1.170286 19.456t-1.170286 19.456l205.677714 102.838857q52.589714-49.152 124.562286-49.152z"></path> 
+          </svg> <span class="share">SHARE </span> 
+        </button>
 
+    </div>
+  </div>
+</header>
+
+ 
+
+    <h1>🔥 Cool-O-Meter</h1>
+    <p class="caption">Which subject rules them all and coolest academic subject? You decide! 🚀</p>
+  </header>
+    <body>
+  <div class="container">
   <section class="leaderboard">
     <h2>🏆 Coolness Leaderboard</h2>
     <div class="top-subjects">
-      <div class="subject rank-2">
-        <img src="cs-icon.png" alt="CS Icon">
-        <p>Computer Science</p>
-        <p>87 votes</p>
+      <div class="subject-card rank-2">
+        <span class="badge">🥈</span>
+        <p class="top-subjects-name" id="second-subject">-</p>
+        
+        <p class="votes" id="second-votes"></p>
       </div>
-      <div class="subject rank-1">
-        <img src="ai-icon.png" alt="AI Icon">
-        <p>Artificial Intelligence</p>
-        <p>91 votes</p>
+      <div class="subject-card rank-1">
+        <span class="badge">🥇</span>
+        <p class="top-subjects-name" id="first-subject">-</p>
+        <p class="votes" id="first-votes"></p>
       </div>
-      <div class="subject rank-3">
-        <img src="cyber-icon.png" alt="Cyber Icon">
-        <p>Cybersecurity</p>
-        <p>65 votes</p>
+
+      <div class="subject-card rank-3">
+        <span class="badge">🥉</span>
+        <p class="top-subjects-name" id="third-subject">-</p>
+        <p class="votes" id="third-votes"></p>
       </div>
     </div>
   </section>
@@ -176,25 +72,77 @@
           <th>Coolness</th>
         </tr>
       </thead>
-      <tbody>
-        <tr><td>1</td><td><img src="ai-icon.png">Artificial Intelligence <span class="very-cool">VERY COOL</span></td><td><button>Vote</button></td><td><div class="bar" style="width: 91%;">91%</div></td></tr>
-        <tr><td>2</td><td><img src="cs-icon.png">Computer Science <span class="very-cool">VERY COOL</span></td><td><button>Vote</button></td><td><div class="bar" style="width: 87%;">87%</div></td></tr>
-        <tr><td>3</td><td><img src="cyber-icon.png">Cybersecurity <span class="very-cool">VERY COOL</span></td><td><button>Vote</button></td><td><div class="bar" style="width: 65%;">65%</div></td></tr>
-        <tr><td>4</td><td><img src="se-icon.png">Software Engineering</td><td><button>Vote</button></td><td><div class="bar" style="width: 63%;">63%</div></td></tr>
-        <tr><td>5</td><td><img src="ds-icon.png">Data Science</td><td><button>Vote</button></td><td><div class="bar" style="width: 58%;">58%</div></td></tr>
-        <tr><td>6</td><td><img src="ml-icon.png">Machine Learning</td><td><button>Vote</button></td><td><div class="bar" style="width: 55%;">55%</div></td></tr>
-        <tr><td>7</td><td><img src="bio-icon.png">Biology</td><td><button>Vote</button></td><td><div class="bar" style="width: 52%;">52%</div></td></tr>
-        <tr><td>8</td><td><img src="math-icon.png">Mathematics</td><td><button>Vote</button></td><td><div class="bar" style="width: 49%;">49%</div></td></tr>
-        <tr><td>9</td><td><img src="psy-icon.png">Psychology</td><td><button>Vote</button></td><td><div class="bar" style="width: 47%;">47%</div></td></tr>
-        <tr><td>10</td><td><img src="biz-icon.png">Business Studies</td><td><button>Vote</button></td><td><div class="bar" style="width: 43%;">43%</div></td></tr>
-        <tr><td>11</td><td><img src="med-icon.png">Medical Sciences</td><td><button>Vote</button></td><td><div class="bar" style="width: 38%;">38%</div></td></tr>
-        <tr><td>12</td><td><img src="eco-icon.png">Economics</td><td><button>Vote</button></td><td><div class="bar" style="width: 35%;">35%</div></td></tr>
-        <tr><td>13</td><td><img src="eng-icon.png">Engineering</td><td><button>Vote</button></td><td><div class="bar" style="width: 30%;">30%</div></td></tr>
-        <tr><td>14</td><td><img src="arts-icon.png">Fine Arts</td><td><button>Vote</button></td><td><div class="bar" style="width: 25%;">25%</div></td></tr>
-        <tr><td>15</td><td><img src="law-icon.png">Law</td><td><button>Vote</button></td><td><div class="bar" style="width: 20%;">20%</div></td></tr>
+      <tbody id="subjects-table-body">
+        <tr><td colspan="4">Loading subjects...</td></tr>
+        <!-- JavaScript will populate this dynamically -->
+        <!-- <tr><td>1</td><td><img src="ai-icon.png">Artificial Intelligence</td><td><button class="vote">Vote</button></td><td><div class="bar" style="width: 91%">91%</div></td></tr>
+        <tr><td>2</td><td><img src="cs-icon.png">Computer Science</td><td><button class="vote">Vote</button></td><td><div class="bar" style="width: 87%">87%</div></td></tr>
+        <tr><td>3</td><td><img src="cyber-icon.png">Cybersecurity</td><td><button class="vote">Vote</button></td><td><div class="bar" style="width: 65%">65%</div></td></tr>
+        <tr><td>4</td><td><img src="se-icon.png">Software Engineering</td><td><button class="vote">Vote</button></td><td><div class="bar" style="width: 63%">63%</div></td></tr>
+        <tr><td>5</td><td><img src="ds-icon.png">Data Science</td><td><button class="vote">Vote</button></td><td><div class="bar" style="width: 58%">58%</div></td></tr>
+        <tr><td>6</td><td><img src="ml-icon.png">Machine Learning</td><td><button class="vote">Vote</button></td><td><div class="bar" style="width: 55%">55%</div></td></tr>
+        <tr><td>7</td><td><img src="bio-icon.png">Biology</td><td><button class="vote">Vote</button></td><td><div class="bar" style="width: 52%">52%</div></td></tr>
+        <tr><td>8</td><td><img src="math-icon.png">Mathematics</td><td><button class="vote">Vote</button></td><td><div class="bar" style="width: 49%">49%</div></td></tr>
+        <tr><td>9</td><td><img src="psy-icon.png">Psychology</td><td><button class="vote">Vote</button></td><td><div class="bar" style="width: 47%">47%</div></td></tr>
+        <tr><td>10</td><td><img src="biz-icon.png">Business Studies</td><td><button class="vote">Vote</button></td><td><div class="bar" style="width: 43%">43%</div></td></tr>
+        <tr><td>11</td><td><img src="med-icon.png">Medical Sciences</td><td><button class="vote">Vote</button></td><td><div class="bar" style="width: 38%">38%</div></td></tr>
+        <tr><td>12</td><td><img src="eco-icon.png">Economics</td><td><button class="vote">Vote</button></td><td><div class="bar" style="width: 35%">35%</div></td></tr>
+        <tr><td>13</td><td><img src="eng-icon.png">Engineering</td><td><button class="vote">Vote</button></td><td><div class="bar" style="width: 30%">30%</div></td></tr>
+        <tr><td>14</td><td><img src="arts-icon.png">Fine Arts</td><td><button class="vote">Vote</button></td><td><div class="bar" style="width: 25%">25%</div></td></tr>
+        <tr><td>15</td><td><img src="law-icon.png">Law</td><td><button class="vote">Vote</button></td><td><div class="bar" style="width: 20%">20%</div></td></tr> -->
       </tbody>
     </table>
   </section>
+  </div>
+  <footer class="footer">
+  Made with <span class="heart">&hearts;</span> by Team 
+  <a href="https://tinyurl.com/TeamCommitSquad" target="_blank" class="linkedin-link">CommitSquad</a>
+  
+  <p class="disclaimer">Disclaimer:
+This program is intended solely for fun and interactive engagement. It
+does not reflect any official academic evaluation.
+</p>
+<p class="disclaimer">
+This application is developed as part of the Global Summer Challenge
+organized by Meeedly.</p>
+</footer>
+
+
+ 
+  <!-- Firebase SDKs -->
+<!-- Firebase SDKs -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import {
+    getFirestore,
+    doc,
+    getDoc,
+    getDocs,
+    setDoc,
+    updateDoc,
+    collection
+  } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCJYr6vRiT0O5wr2AUwvq-C4-meQpbwlWs",
+    authDomain: "cool-o-meter.firebaseapp.com",
+    projectId: "cool-o-meter",
+    storageBucket: "cool-o-meter.appspot.com",
+    messagingSenderId: "658436231923",
+    appId: "1:658436231923:web:bad5533eaaaec0fd7c5d86"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // Make Firestore tools accessible to script.js
+  window.firebaseDB = db;
+  window.firebaseTools = { doc, getDoc, getDocs, setDoc, updateDoc, collection };
+</script>
+
+<!-- Your Main JS Logic -->
+<script src="script.js" defer></script>
+
 
 </body>
 </html>

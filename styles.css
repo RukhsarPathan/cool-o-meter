@@ -1,0 +1,256 @@
+  body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 5%;
+      padding: 1rem;
+      background: linear-gradient(135deg, #5815e9, #e8d9ff);
+      color: #fff;
+    }
+    
+
+    h1, h2 {
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      color: #ffcc00;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .caption {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #ddd;
+    }
+
+    .leaderboard {
+      margin-bottom: 2rem;
+    
+    }
+
+    .top-subjects {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+.subject-card {
+      border-radius: 15px;
+      padding: 1.5rem 1rem;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+      position: relative;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+.subject-card:hover {
+  transform: scale(1.05);
+}
+
+       .top-subjects-name {
+        text-shadow: 0 0 5px #fff, 0 0 10px #8e2de2, 0 0 15px #4a00e0; 
+        letter-spacing: 1px;
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+       }
+
+.rank-1 {
+      background: linear-gradient(145deg, #FFD700, #FFEF8A);
+      color: #000;
+      
+    }
+
+    .rank-2 {
+      background: linear-gradient(145deg, #C0C0C0, #e0e0e0);
+      color: #000;
+    }
+
+    .rank-3 {
+      background: linear-gradient(145deg, #cd7f32, #e3b48c);
+      color: #000;
+    }
+
+    .badge {
+      font-size: 2.5rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .votes {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #4018d2;
+    }
+
+    table {
+      width: 100%;
+      background: #1a0033;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    th, td {
+      padding: 1rem;
+      text-align: left;
+      color: #fff;
+    }
+
+    th {
+      background: #a26fdc;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    td img {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 0.5rem;
+    }
+
+.bar {
+  height: 20px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 2px #9c6eff; /* border-style effect */
+}
+
+.bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #a18cd1, #fbc2eb);
+  border-radius: 5px;
+  transition: width 0.6s ease-in-out;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+
+    .vote {
+      background: #ff6ec4;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .vote:hover {
+      background: #ff33a8;
+    }
+
+    /* Mobile media queries */
+   /* Small phones (320px–375px) */
+@media only screen and (max-width: 375px) {
+  body {
+    padding: 1rem 0.5rem;
+    overflow-x: hidden;
+  }
+
+  header,
+  .leaderboard,
+  .rankings {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .top-subjects {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .subject-card {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  table {
+    font-size: 0.85rem;
+    width: 100%;
+  }
+
+  .bar {
+    font-size: 0.7rem;
+  }
+
+  .vote {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+.share-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(66, 13, 240);
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  outline: 3px solid #270092;
+  cursor: pointer;
+  transition: ease-out .5s;
+  
+}
+
+.share-button:hover {
+  width: 180px;
+  height: 60px;
+  outline-offset: 4px;
+  transform: scale(1.3) rotate(2deg);
+  background-color: blue;
+  box-shadow: 5px 20px #cdcbd4
+}
+
+.icon {
+  color: #270092;
+  margin-right: 5px;
+}
+
+.share {
+  margin-left: 5px;
+  color: #fff;
+}
+.footer .heart {
+    color:red;
+}
+.footer {
+    text-align: center;
+    margin-top:10px;
+}
+.disclaimer {
+    color:#000;
+    line-height: 1%;
+
+}
+
+.footer .linkedin-link {
+    color:#4a00e0;
+}
+.logo {
+  max-height: 80px;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  max-width: 150px;
+}
+.site-header {
+  padding: 1rem;
+  margin:auto;
+
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-left a {
+  text-decoration: none;
+}
