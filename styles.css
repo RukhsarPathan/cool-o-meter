@@ -1,8 +1,9 @@
   body {
       font-family: 'Open Sans', sans-serif;
-      margin: 5%;
+      margin: 3%;
       padding: 1rem;
-      background: linear-gradient(135deg, #5815e9, #e8d9ff);
+      /* background: linear-gradient(135deg, #5815e9, #e8d9ff); */
+      background: linear-gradient(135deg, #997bd9, #e8d9ff);
       color: #fff;
     }
     
@@ -11,6 +12,7 @@
       font-family: 'Orbitron', sans-serif;
       text-align: center;
       color: #ffcc00;
+      /* color:rgb(66, 13, 240); */
     }
     h1 {
         font-size: 3rem;
@@ -233,12 +235,16 @@
 .footer .linkedin-link {
     color:#4a00e0;
 }
+.link {
+ color:#4a00e0;
+}
 .logo {
   max-height: 80px;
   height: auto;
   width: auto;
   object-fit: contain;
   max-width: 150px;
+  margin:6px;
 }
 .site-header {
   padding: 1rem;
@@ -252,5 +258,14 @@
   align-items: center;
 }
 .header-left a {
-  text-decoration: none;
+  text-decoration: underline;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.08);
+  padding: 0.2rem 1rem;
+  border-radius: 6px;
+  gap: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
