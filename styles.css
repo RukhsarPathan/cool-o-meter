@@ -3,7 +3,8 @@
       margin: 4%;
       padding: 1rem;
       /* background: linear-gradient(135deg, #5815e9, #e8d9ff); */
-      background: linear-gradient(135deg, #997bd9, #e8d9ff);
+      /* background: linear-gradient(135deg, #997bd9, #e8d9ff); */
+      background: linear-gradient(135deg, #111112, #070110);
       color: #fff;
     }
     
@@ -51,38 +52,39 @@
 }
 
        .top-subjects-name {
-        text-shadow: 0 0 5px #fff, 0 0 10px #8e2de2, 0 0 15px #4a00e0; 
+        /* text-shadow: 0 0 5px #e9ecdd, 0 0 10px #8e2de2, 0 0 15px #4a00e0;  */
         letter-spacing: 1px;
         font-family: sans-serif;
-        font-size: 1.2rem;
+        font-size: 1.7rem;
         font-weight: bold;
+        color:white;
        }
 
 .rank-1 {
-      background: linear-gradient(145deg, #FFD700, #FFEF8A);
+      background: linear-gradient(145deg, #ec0c66, #5416dc);
       color: #000;
       
     }
 
     .rank-2 {
-      background: linear-gradient(145deg, #C0C0C0, #e0e0e0);
+      background: linear-gradient(145deg, #ec0c66, #5416dc);
       color: #000;
     }
 
     .rank-3 {
-      background: linear-gradient(145deg, #cd7f32, #e3b48c);
+      background: linear-gradient(145deg, #ec0c66, #5416dc);
       color: #000;
     }
 
     .badge {
-      font-size: 2.5rem;
+      font-size: 5rem;
       display: block;
       margin-bottom: 0.5rem;
     }
     .votes {
       font-weight: bold;
-      font-size: 1rem;
-      color: #4018d2;
+      font-size: rem;
+      color: #ffcc00;
     }
 
     table {
@@ -98,6 +100,7 @@
       padding: 1rem;
       text-align: left;
       color: #fff;
+      font-size:18px;
     }
 
     th {
@@ -122,28 +125,30 @@
 .bar-fill {
   height: 100%;
   width: 0%;
-  background: linear-gradient(90deg, #a18cd1, #fbc2eb);
+  background: linear-gradient(90deg, #500fe7, #e540b6);
   border-radius: 5px;
   transition: width 0.6s ease-in-out;
   text-align: center;
-  color: #000;
+  color: #fffff;
   font-weight: bold;
   line-height: 20px;
 }
 
 
     .vote {
-      background: #ff6ec4;
+      background: #f80998;
       color: white;
       border: none;
       border-radius: 8px;
       padding: 0.5rem 1rem;
       cursor: pointer;
       transition: background 0.3s ease;
+      width:6rem;
+      font-size:18px;
     }
 
     .vote:hover {
-      background: #ff33a8;
+      background:#5416dc;
     }
 
     /* Mobile media queries */
@@ -183,7 +188,7 @@
 
   .vote {
     padding: 0.4rem 0.8rem;
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
   }
   
 @media (max-width: 430px) {
@@ -236,7 +241,7 @@
 
 
 .link {
- color:#4a00e0;
+ color:#f80998;
 }
 .logo {
   max-height: 80px;
@@ -263,7 +268,8 @@
 .header-left {
   display: flex;
   align-items: center;
-  background: rgba(255,255,255,0.08);
+  /* background: rgba(155, 148, 198, 0.916); */
+  background: linear-gradient(90deg, #8c65e7, #e87ac9);
   padding: 0.2rem 1rem;
   border-radius: 6px;
   gap: 1rem;
@@ -305,7 +311,7 @@ footer {
 .footer .linkedin-link {
   text-decoration: none;
   font-weight: bold;
-  color:#4a00e0;
+  color:#ec0c66;
 
 }
 
@@ -313,5 +319,128 @@ footer {
   margin-top: 0.75rem;
   margin-bottom: 0;
   padding: 0 1rem;
-  color:#1a0033;
+  color:#ffffff;
+}
+/* From Uiverse.io by vinodjangid07 */ 
+.card {
+  width: fit-content;
+  height: fit-content;
+  /* background-color: rgb(238, 238, 238); */
+  background: linear-gradient(90deg, #8c65e7, #e87ac9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  margin-top:50px;
+  margin-right:10px;
+  margin-left:10px;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+/* @keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+body {
+  overflow-x: hidden;
+}
+} */
+ @keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 430px) {
+  .footer {
+    font-size: 0.85rem;
+    padding: 1.2rem 0.75rem;
+  }
+.body {
+  overflow-x: hidden;
+}
+  .footer .disclaimer {
+    padding: 0;
+    text-align: left;
+  }
+}
+.top-subjects {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) {
+  .top-subjects {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
 }
