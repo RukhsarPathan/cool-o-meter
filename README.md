@@ -17,6 +17,6 @@ Originally built for the Meeedly Global Summer Challenge, Cool-O-Meter showcases
 	• Gamified animations and subject “rank-up” indicators
 	• Mobile-first enhancements for student voting on the go
 
-### 📌 Demo / Live Preview: (Cool-o-Meter live)[https://rukhsarpathan.github.io/cool-o-meter/]
+### 📌 Demo / Live Preview: [Cool-o-Meter live](https://rukhsarpathan.github.io/cool-o-meter/)
 
 
