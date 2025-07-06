@@ -2,6 +2,9 @@
 Cool-O-Meter is a single-page, gamified web application built with HTML CSS AND VANILLE JAVASCRIPT that allows university students to anonymously vote for the academic subject they think is the “coolest.” 🎓✨
 Votes are visually represented with dynamic progress bars and live percentage updates, making the experience fun, competitive, and interactive — like a mini leaderboard war between disciplines.
 
+
+![Cool-O-Meter Demo](./coolometersc.png)
+
 ### 🎯 Key Features:
 	• ✅ Anonymous Voting No login required. Users simply vote once for their favorite subject and can’t vote again.
 	• 🎨 Stylish UI + Hover Effects Custom-designed subject cards with hover animations, cool buttons ("Vote"), and color-coded progress bars.
